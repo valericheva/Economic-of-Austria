@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Економічна Безпека Австрії</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 50%, #2d1b69 100%);
+            color: #e8e8f0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Навігація */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(138, 99, 255, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #8a63ff, #d499ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 1px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 0.5rem;
+        }
+
+        .nav-menu a {
+            color: #c0c0d8;
+            text-decoration: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-menu a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(138, 99, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .nav-menu a:hover::before {
+            left: 100%;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(138, 99, 255, 0.2);
+            color: #d499ff;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(138, 99, 255, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -200px;
+            right: -200px;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(212, 153, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            bottom: -150px;
+            left: -150px;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, -30px) scale(1.1); }
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 1;
+            max-width: 900px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #8a63ff, #d499ff, #ff6b9d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease;
+            font-weight: 800;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: #b8b8d0;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator::after {
+            content: '↓';
+            font-size: 2rem;
+            color: #8a63ff;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-20px) translateX(-50%); }
+            60% { transform: translateY(-10px) translateX(-50%); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Sections */
+        section {
+            margin: 4rem 0;
+            scroll-margin-top: 100px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #8a63ff, #d499ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: #a0a0c0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Cards */
+        .card {
+            background: rgba(26, 26, 62, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(138, 99, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(138, 99, 255, 0.1), transparent);
+            transition: left 0.7s ease;
+        }
+
+        .card:hover::before {
+            left: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 48px rgba(138, 99, 255, 0.3);
+            border-color: rgba(138, 99, 255, 0.5);
+        }
+
+        /* Profile Section */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .profile-card h3 {
+            color: #d499ff;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-item {
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            background: rgba(138, 99, 255, 0.05);
+            border-radius: 12px;
+            border-left: 3px solid #8a63ff;
+            transition: all 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: rgba(138, 99, 255, 0.15);
+            transform: translateX(8px);
+        }
+
+        .info-item strong {
+            color: #b8b0ff;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(138, 99, 255, 0.1) 0%, rgba(212, 153, 255, 0.05) 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid rgba(138, 99, 255, 0.2);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(138, 99, 255, 0.1) 0%, transparent 70%);
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+        }
+
+        .stat-card:hover::before {
+            transform: rotate(135deg);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 16px 48px rgba(138, 99, 255, 0.4);
+            border-color: #8a63ff;
+        }
+
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #8a63ff, #d499ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin: 1rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-label {
+            color: #b0b0d0;
+            font-size: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Threats and Solutions */
+        .threat-item,
+        .solution-item {
+            background: rgba(26, 26, 62, 0.6);
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 20px;
+            border-left: 5px solid #ff6b9d;
+            transition: all 0.4s ease;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .solution-item {
+            border-left-color: #51cf66;
+        }
+
+        .threat-item:hover,
+        .solution-item:hover {
+            transform: translateX(12px);
+            box-shadow: 0 8px 32px rgba(138, 99, 255, 0.3);
+            background: rgba(26, 26, 62, 0.9);
+        }
+
+        .item-number {
+            min-width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #ff6b9d, #ff8fab);
+            border-radius: 15px;
+            font-weight: 800;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 16px rgba(255, 107, 157, 0.4);
+        }
+
+        .solution-item .item-number {
+            background: linear-gradient(135deg, #51cf66, #69db7c);
+            box-shadow: 0 4px 16px rgba(81, 207, 102, 0.4);
+        }
+
+        .item-content h4 {
+            color: #d499ff;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .item-content p {
+            color: #c0c0d8;
+            line-height: 1.8;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #8a63ff, #9d7aff);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: default;
+            box-shadow: 0 4px 16px rgba(138, 99, 255, 0.3);
+        }
+
+        .skill-tag:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 8px 24px rgba(138, 99, 255, 0.5);
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(10, 14, 39, 0.95);
+            padding: 3rem 2rem;
+            margin-top: 6rem;
+            border-top: 1px solid rgba(138, 99, 255, 0.3);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer h3 {
+            color: #d499ff;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .contact-grid {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .contact-item strong {
+            color: #b8b0ff;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-item span {
+            color: #e8e8f0;
+            font-size: 1.1rem;
+        }
+
+        /* Indicators */
+        .indicators-grid {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .indicator-item {
+            background: rgba(138, 99, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 16px;
+            border-left: 4px solid #8a63ff;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .indicator-item:hover {
+            background: rgba(138, 99, 255, 0.15);
+            transform: translateX(8px);
+        }
+
+        .indicator-icon {
+            font-size: 2rem;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .indicator-text {
+            flex: 1;
+        }
+
+        .indicator-text strong {
+            color: #d499ff;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Experience Timeline */
+        .experience-item {
+            position: relative;
+            padding-left: 3rem;
+            margin: 2rem 0;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: linear-gradient(135deg, #8a63ff, #d499ff);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(138, 99, 255, 0.6);
+        }
+
+        .experience-item::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 16px;
+            width: 2px;
+            height: calc(100% + 16px);
+            background: linear-gradient(180deg, rgba(138, 99, 255, 0.5), transparent);
+        }
+
+        .experience-item:last-child::after {
+            display: none;
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: rgba(138, 99, 255, 0.2);
+            color: #b8b0ff;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 2rem 0;
+            background: rgba(26, 26, 62, 0.5);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        th {
+            background: rgba(138, 99, 255, 0.2);
+            color: #d499ff;
+            padding: 1.2rem;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        td {
+            padding: 1.2rem;
+            color: #c0c0d8;
+            border-bottom: 1px solid rgba(138, 99, 255, 0.1);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: rgba(138, 99, 255, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .threat-item,
+            .solution-item {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Економічна Безпека Австрії</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#resume">Резюме</a></li>
+                <li><a href="#security">Економічна безпека</a></li>
+                <li><a href="#threats">Загрози</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Економічна Безпека Австрії</h1>
+            <p class="hero-subtitle">Комплексний аналіз стану та перспектив розвитку 2012-2024</p>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2>Резюме</h2>
+                <p>Валерія Усачова | Valeria Usacheva</p>
+            </div>
+
+            <div class="profile-grid">
+                <div class="card profile-card">
+                    <h3>👤 Особиста інформація</h3>
+                    <div class="info-item"><strong>Дата народження:</strong> 14 серпня 2008</div>
+                    <div class="info-item"><strong>Місце народження:</strong> Харків, Україна</div>
+                    <div class="info-item"><strong>Телефон:</strong> (+380) 0505611028</div>
+                    <div class="info-item"><strong>Email:</strong> valeri.cheva12@gmail.com</div>
+                    <div class="info-item"><strong>Адреса:</strong> Вулиця Мілютенко, 6, 02166, Київ, Україна</div>
+                </div>
+
+                <div class="card profile-card">
+                    <h3>💼 Досвід роботи</h3>
+                    <div class="experience-item">
+                        <h4>Благодійний фонд "Незламний Харків"</h4>
+                        <span class="date-badge">12 жовтня 2024 - 5 червня 2025</span>
+                        <p style="color: #b8b0ff; margin-top: 0.5rem;">Волонтер</p>
+                        <p>Допомога людям, які втратили домівки</p>
+                    </div>
+                </div>
+
+                <div class="card profile-card">
+                    <h3>🎓 Освіта</h3>
+                    <div class="experience-item">
+                        <h4>Середня освіта</h4>
+                        <span class="date-badge">1 вересня 2014 - 30 травня 2025</span>
+                        <p style="color: #b8b0ff; margin-top: 0.5rem;">Харківська спеціалізована школа І-ІІІ рівнів №93</p>
+                        <p>Харків, Україна</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Мовні навички</h3>
+                <p style="margin: 1rem 0;"><strong>Рідна мова:</strong> Російська</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Мова</th>
+                            <th>Розуміння</th>
+                            <th>Говоріння</th>
+                            <th>Письмо</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Англійська</strong></td>
+                            <td>B1</td>
+                            <td>B1</td>
+                            <td>B1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="font-size: 0.9rem; color: #a0a0c0; margin-top: 1rem;">Рівні: A1-A2: Базовий; B1-B2: Незалежний; C1-C2: Професійний</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Технічні навички</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Microsoft Office</span>
+                    <span class="skill-tag">Microsoft Word</span>
+                    <span class="skill-tag">Microsoft PowerPoint</span>
+                    <span class="skill-tag">Соціальні медіа</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🎨 Хобі та інтереси</h3>
+                <p style="color: #c0c0d8; line-height: 1.8;">Фітнес, співи, в'язання</p>
+            </div>
+
+            <div class="card">
+                <h3>🎤 Соціальна та творча діяльність</h3>
+                <div class="experience-item">
+                    <h4>Будинок культури, Харків</h4>
+                    <span class="date-badge">25 грудня 2019 - 22 червня 2025</span>
+                    <p style="color: #b8b0ff; margin-top: 0.5rem;">Співи</p>
+                </div>
+                <div class="experience-item">
+                    <h4>Благодійний концерт</h4>
+                    <span class="date-badge">12 червня 2025 - 22 червня 2025</span>
+                    <p style="margin-top: 0.5rem;">Створення благодійного концерту для дітей та їхніх батьків, участь у співах та ведення заходу</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economic Security Section -->
+    <section id="security">
+        <div class="container">
+            <div class="section-header">
+                <h2>Економічна безпека Австрії</h2>
+                <p>Аналіз стану та ключових показників 2012-2024 років</p>
+            </div>
+
+            <div class="card">
+                <h3>📊 Загальна оцінка</h3>
+                <p style="color: #c0c0d8; line-height: 1.8; margin-bottom: 1rem;">
+                    Аналіз економічної безпеки Австрії за період 2012-2024 років демонструє стабільний та помірно позитивний стан більшості ключових показників. Країна характеризується високим рівнем відкритості економіки з середнім значенням індексу 109, що свідчить про активну інтеграцію у світову торговельну систему.
+                </p>
+                <p style="color: #c0c0d8; line-height: 1.8; margin-bottom: 1rem;">
+                    Енергетична безпека перебуває на оптимальному рівні, частка відновлювальних джерел енергії стабільно тримається на рівні 34-36%. Покриття експортом імпорту знаходиться в оптимальному діапазоні зі середнім значенням 1,051, що засвідчує збалансованість зовнішньої торгівлі.
+                </p>
+                <p style="color: #c0c0d8; line-height: 1.8; margin-bottom: 1rem;">
+                    Інвестиційно-інноваційна безпека характеризується позитивною тенденцією зростання прямих іноземних інвестицій, питома вага наукових робіт у ВВП досягла 89,5% у 2024 році. Демографічна ситуація залишається стабільною з висхідним трендом, що позитивно впливає на трудовий потенціал.
+                </p>
+                <p style="color: #c0c0d8; line-height: 1.8; margin-bottom: 1rem;">
+                    Фінансова безпека демонструє критичний рівень за показником державного боргу (54,59% до ВВП), що потребує уваги. Водночас, рівень інфляції знаходиться на незадовільному рівні (3,08), що вказує на необхідність монетарного регулювання.
+                </p>
+                <p style="color: #c0c0d8; line-height: 1.8;">
+                    Загалом, економічна безпека Австрії перебуває на задовільному рівні з позитивними тенденціями у більшості секторів, проте потребує уваги фінансова стійкість та продовольча безпека.
+                </p>
+            </div>
+
+            <h3 style="text-align: center; color: #d499ff; margin: 3rem 0 2rem; font-size: 2rem;">Ключові показники</h3>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Відкритість економіки</div>
+                    <span class="stat-value">109</span>
+                    <div class="stat-label">Індекс (оптимум: ≥105)</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Покриття експортом імпорту</div>
+                    <span class="stat-value">1,051</span>
+                    <div class="stat-label">Рази (оптимум: 1,0-1,2)</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Частка відновлювальних джерел</div>
+                    <span class="stat-value">34,8%</span>
+                    <div class="stat-label">Середнє значення</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Державний борг</div>
+                    <span class="stat-value">54,59%</span>
+                    <div class="stat-label">До ВВП (критичний рівень)</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Рівень інфляції</div>
+                    <span class="stat-value">3,08</span>
+                    <div class="stat-label">Відсотків (незадовільно)</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Рівень безробіття</div>
+                    <span class="stat-value">5,4%</span>
+                    <div class="stat-label">Задовільний рівень</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🏭 Макроекономічна безпека</h3>
+                <div class="indicators-grid">
+                    <div class="indicator-item">
+                        <div class="indicator-icon">📊</div>
+                        <div class="indicator-text">
+                            <strong>Відкритість економіки</strong>
+                            109 (оптимальний рівень, ≥105)
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="indicator-icon">💹</div>
+                        <div class="indicator-text">
+                            <strong>Частка експорту у ВВП</strong>
+                            55,8% (оптимум: 51,7-62,0%)
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="indicator-icon">📈</div>
+                        <div class="indicator-text">
+                            <strong>Частка імпорту у ВВП</strong>
+                            53,2% (оптимум: 48,3-62,4%)
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="indicator-icon">⚖️</div>
+                        <div class="indicator-text">
+                            <strong>Покриття експортом імпорту</strong>
+                            1,051 рази (оптимум: 1,0-1,2)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>⚡ Енергетична безпека</h3>
+                <div class="indicators-grid">
+                    <div class="indicator-item">
+                        <div class="indicator-icon">🌱</div>
+                        <div class="indicator-text">
+                            <strong>Частка відновлювальних джерел</strong>
+                            34,8% (оптимум: ≥6)
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="indicator-icon">📉</div>
+                        <div class="indicator-text">
+                            <strong>Тенденція 2012-2021</strong>
+                            Позитивна, оптимальний рівень
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>💼 Інвестиційно-інноваційна безпека</h3>
+                <div class="indicators-grid">
+                    <div class="indicator-item">
+                        <div class="indicator-icon">💰</div>
+                        <div class="indicator-text">
+                            <strong>Прямі іноземні інвестиції</strong>
+                            -0,8% до ВВП (абсолютно небезпечний рівень)
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="indicator-icon">🔬</div>
+                        <div class="indicator-text">
+                            <strong>Питома вага наукових робіт</strong>
+                            89,5% у ВВП (оптимум: ≥80)
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="indicator-icon">🌐</div>
+                        <div class="indicator-text">
+                            <strong>Користувачі інтернету</strong>
+                            3,1 млн осіб (оптимум: ≥3)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>💵 Фінансова безпека</h3>
+                <div class="indicators-grid">
+                    <div class="indicator-item">
+                        <div class="indicator-icon">💳</div>
+                        <div class="indicator-text">
+                            <strong>Державний борг</strong>
+                            54,59% до ВВП (критичний рівень, 50-60%)
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="indicator-icon">🏦</div>
+                        <div class="indicator-text">
+                            <strong>Міжнародні резерви</strong>
+                            1,21 місяців імпорту (оптимум: 1,21)
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="indicator-icon">💸</div>
+                        <div class="indicator-text">
+                            <strong>Інфляція</strong>
+                            3,08% (незадовільний рівень, 3-5)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>👨‍💼 Соціальна безпека</h3>
+                <div class="indicators-grid">
+                    <div class="indicator-item">
+                        <div class="indicator-icon">👷</div>
+                        <div class="indicator-text">
+                            <strong>Зайнятість у неформальному секторі</strong>
+                            66,3% (оптимум: ≥20-25)
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="indicator-icon">📊</div>
+                        <div class="indicator-text">
+                            <strong>Рівень безробіття</strong>
+                            5,4% (задовільний, 5-6)
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="indicator-icon">💊</div>
+                        <div class="indicator-text">
+                            <strong>Видатки на освіту</strong>
+                            5,4% від ВВП (небезпечний рівень)
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="indicator-icon">🏥</div>
+                        <div class="indicator-text">
+                            <strong>Видатки на охорону здоров'я</strong>
+                            10,7% від ВВП (оптимум: ≥7)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Threats Section -->
+    <section id="threats">
+        <div class="container">
+            <div class="section-header">
+                <h2>Загрози та методи протидії</h2>
+                <p>Аналіз основних викликів та шляхів їх вирішення</p>
+            </div>
+
+            <h3 style="text-align: center; color: #ff8fab; margin: 3rem 0 2rem; font-size: 2rem;">🚨 5 основних загроз</h3>
+
+            <div class="threat-item">
+                <div class="item-number">1</div>
+                <div class="item-content">
+                    <h4>Критичний рівень державного боргу</h4>
+                    <p>Державний борг становить 54,59% від ВВП, що перебуває у критичному діапазоні (50-60%). Високий рівень боргового навантаження обмежує можливості фіскального маневру, збільшує вразливість до економічних шоків та створює ризики для довгострокової фінансової стійкості країни. Зростання боргу може призвести до необхідності скорочення соціальних видатків та підвищення податкового тягаря.</p>
+                </div>
+            </div>
+
+            <div class="threat-item">
+                <div class="item-number">2</div>
+                <div class="item-content">
+                    <h4>Незадовільний рівень інфляції</h4>
+                    <p>Рівень інфляції у 3,08% знаходиться на незадовільному рівні, що негативно впливає на купівельну спроможність населення та конкурентоспроможність національної економіки. Підвищені темпи зростання цін знижують реальні доходи громадян, особливо найбільш вразливих верств населення, та створюють невизначеність для бізнесу при плануванні інвестицій.</p>
+                </div>
+            </div>
+
+            <div class="threat-item">
+                <div class="item-number">3</div>
+                <div class="item-content">
+                    <h4>Критичний рівень продовольчої безпеки</h4>
+                    <p>Виробництво зерна на рівні 0,6 тон на одну особу знаходиться у критичному діапазоні (0,6-0,7 тон). Недостатнє внутрішнє виробництво зернових культур створює високу залежність від імпорту продовольства, що робить країну вразливою до коливань світових цін та можливих перебоїв у постачанні. Це становить серйозний ризик для продовольчої незалежності держави.</p>
+                </div>
+            </div>
+
+            <div class="threat-item">
+                <div class="item-number">4</div>
+                <div class="item-content">
+                    <h4>Абсолютно небезпечний рівень прямих іноземних інвестицій</h4>
+                    <p>Показник відношення чистого приросту прямих іноземних інвестицій до ВВП становить -0,8%, що класифікується як абсолютно небезпечний рівень. Від'ємне значення свідчить про відтік капіталу з країни, що негативно впливає на модернізацію виробництва, впровадження інновацій та створення нових робочих місць.</p>
+                </div>
+            </div>
+
+            <div class="threat-item">
+                <div class="item-number">5</div>
+                <div class="item-content">
+                    <h4>Надмірний рівень соціальної нерівності</h4>
+                    <p>Децильний коефіцієнт фондів становить 7,97 разів, що перебуває на абсолютно небезпечному рівні (≥7). Така значна диференціація доходів створює соціальну напругу, обмежує можливості для економічної мобільності та може призвести до політичної нестабільності. Висока нерівність також негативно впливає на сукупний попит та темпи економічного зростання.</p>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; color: #69db7c; margin: 4rem 0 2rem; font-size: 2rem;">✅ 5 методів протидії</h3>
+
+            <div class="solution-item">
+                <div class="item-number">1</div>
+                <div class="item-content">
+                    <h4>Фіскальна консолідація та управління державним боргом</h4>
+                    <p>Впровадження середньострокової стратегії скорочення дефіциту бюджету через оптимізацію державних видатків, підвищення ефективності податкового адміністрування та боротьбу з ухиленням від оподаткування. Розробка чіткого плану погашення боргу з встановленням конкретних цільових показників.</p>
+                </div>
+            </div>
+
+            <div class="solution-item">
+                <div class="item-number">2</div>
+                <div class="item-content">
+                    <h4>Таргетування інфляції та монетарна політика</h4>
+                    <p>Координація дій центрального банку з урядом для досягнення цільового рівня інфляції у діапазоні 2%. Застосування інструментів монетарної політики для стримування інфляційного тиску, включаючи коригування облікової ставки та операції на відкритому ринку.</p>
+                </div>
+            </div>
+
+            <div class="solution-item">
+                <div class="item-number">3</div>
+                <div class="item-content">
+                    <h4>Розвиток аграрного сектору та продовольча політика</h4>
+                    <p>Державна підтримка сільського господарства через субсидії, пільгові кредити та інвестиції у модернізацію виробництва. Впровадження інноваційних технологій та сучасних методів агровиробництва для підвищення врожайності зернових культур. Створення стратегічних запасів продовольства.</p>
+                </div>
+            </div>
+
+            <div class="solution-item">
+                <div class="item-number">4</div>
+                <div class="item-content">
+                    <h4>Поліпшення інвестиційного клімату та залучення капіталу</h4>
+                    <p>Спрощення процедур реєстрації бізнесу, отримання дозволів та ліцензій для зниження адміністративного навантаження на інвесторів. Створення спеціальних економічних зон з пільговим режимом оподаткування для інноваційних виробництв. Гарантування захисту прав власності.</p>
+                </div>
+            </div>
+
+            <div class="solution-item">
+                <div class="item-number">5</div>
+                <div class="item-content">
+                    <h4>Соціальна політика та зменшення нерівності</h4>
+                    <p>Проведення прогресивної податкової реформи з підвищенням оподаткування високих доходів при одночасному зниженні податкового тягаря на найменш забезпечені верстви населення. Підвищення мінімальної заробітної плати та соціальних виплат. Інвестиції в освіту та програми соціальної мобільності.</p>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 3rem;">
+                <h3>📌 Висновок</h3>
+                <p style="color: #c0c0d8; line-height: 1.8; margin-bottom: 1rem;">
+                    Економічна безпека Австрії потребує комплексного підходу до вирішення виявлених загроз. Ключовими напрямками мають стати фіскальна дисципліна, контроль інфляції, розвиток внутрішнього виробництва продовольства, покращення інвестиційного клімату та зниження соціальної нерівності.
+                </p>
+                <p style="color: #c0c0d8; line-height: 1.8;">
+                    Своєчасне впровадження запропонованих методів протидії дозволить мінімізувати ризики для економічної безпеки та створити підґрунтя для довгострокового процвітання країни у умовах глобальних викликів сучасності.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <h3>Контактна інформація</h3>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <span>valeri.cheva12@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Телефон</strong>
+                    <span>(+380) 0505611028</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Адреса</strong>
+                    <span>Вулиця Мілютенко, 6, 02166, Київ, Україна</span>
+                </div>
+            </div>
+            <p style="margin-top: 3rem; color: #808090; font-size: 0.95rem;">
+                © 2025 Валерія Усачова. Аналіз економічної безпеки Австрії.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
